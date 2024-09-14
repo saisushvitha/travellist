@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import countriee from './countries'; 
+import travelImage from '../assets/images/travel.jpg';
 
 interface Country {
   name: string;
@@ -26,7 +27,7 @@ const BucketList: React.FC = () => {
 
   return (
     <div className="relative min-h-screen bg-cover bg-center"
-         style={{ backgroundImage: `url('/images/travel.jpg')`, backgroundSize: 'cover' }}>
+         style={{ backgroundImage: `url(${travelImage})`, backgroundSize: 'cover' }}>
       {/* Dark overlay for better readability */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
       
